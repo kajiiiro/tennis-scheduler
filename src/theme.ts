@@ -24,12 +24,10 @@ const fonts = {
 const fontSizes = {
   xs: "12px",
   sm: "14px",
-  md: "16px",
-  lg: "20px",
-  xl: "24px",
-  "2xl": "32px",
-  "3xl": "48px",
-  "4xl": "64px",
+  md: "18px",
+  lg: "24px",
+  xl: "32px",
+  "2xl": "48px",
 };
 const fontWeights = {
   light: 300,
