@@ -1,6 +1,12 @@
 "use client";
 
-import { Box, Flex, Heading, Text, Stack } from "@/components/atoms/atoms";
+import { Box, Flex, Text, Stack } from "@/components/atoms/atoms";
+import {
+  Heading1,
+  Heading2,
+  Heading3,
+  Heading4,
+} from "@/components/atoms/header";
 import { Section } from "@/components/atoms/layout";
 
 export default function ThemePage() {
@@ -20,15 +26,11 @@ export default function ThemePage() {
 
   return (
     <Box p="8" bg="background">
-      <Heading size="lg" mb="6">
-        Theme Showcase
-      </Heading>
+      <Heading1>Theme Showcase</Heading1>
 
       {/* Color Palette */}
       <Section>
-        <Heading size="md" mb="4">
-          Colors
-        </Heading>
+        <Heading2>Colors</Heading2>
         <Flex wrap="wrap">
           {colors.map((c) => (
             <Box key={c.name} m="2" textAlign="center">
@@ -43,14 +45,12 @@ export default function ThemePage() {
 
       {/* Typography */}
       <Section>
-        <Heading size="md" mb="4">
-          Typography
-        </Heading>
+        <Heading2>Typography</Heading2>
         <Stack>
-          <Heading size="2xl">Heading 2xl</Heading>
-          <Heading size="xl">Heading xl</Heading>
-          <Heading size="lg">Heading lg</Heading>
-          <Heading size="md">Heading md</Heading>
+          <Heading1>Heading1</Heading1>
+          <Heading2>Heading2</Heading2>
+          <Heading3>Heading3</Heading3>
+          <Heading4>Heading4</Heading4>
           <Text fontSize="2xl">Text 2xl</Text>
           <Text fontSize="xl">Text xl</Text>
           <Text fontSize="lg">Text lg</Text>
@@ -62,9 +62,7 @@ export default function ThemePage() {
 
       {/* Spacing Scale */}
       <Section>
-        <Heading size="md" mb="4">
-          Spacing
-        </Heading>
+        <Heading2>Spacing</Heading2>
         <Stack>
           <Box bg="surface" p="xs">
             Spacing xs
