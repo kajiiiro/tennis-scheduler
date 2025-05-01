@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { Box, Flex, Stack, Text, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Stack } from "@/components/atoms/atoms";
+import { Section } from "@/components/atoms/layout";
 
 export default function ThemePage() {
   const colors = [
@@ -20,10 +20,12 @@ export default function ThemePage() {
 
   return (
     <Box p="8" bg="background">
-      <Heading mb="6">Theme Showcase</Heading>
+      <Heading size="lg" mb="6">
+        Theme Showcase
+      </Heading>
 
       {/* Color Palette */}
-      <Box mb="8">
+      <Section>
         <Heading size="md" mb="4">
           Colors
         </Heading>
@@ -37,10 +39,10 @@ export default function ThemePage() {
             </Box>
           ))}
         </Flex>
-      </Box>
+      </Section>
 
       {/* Typography */}
-      <Box mb="8">
+      <Section>
         <Heading size="md" mb="4">
           Typography
         </Heading>
@@ -56,10 +58,10 @@ export default function ThemePage() {
           <Text fontSize="sm">Text sm</Text>
           <Text fontSize="xs">Text xs</Text>
         </Stack>
-      </Box>
+      </Section>
 
       {/* Spacing Scale */}
-      <Box mb="8">
+      <Section>
         <Heading size="md" mb="4">
           Spacing
         </Heading>
@@ -80,7 +82,7 @@ export default function ThemePage() {
             Spacing xl
           </Box>
         </Stack>
-      </Box>
+      </Section>
     </Box>
   );
 }

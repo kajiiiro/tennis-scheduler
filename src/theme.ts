@@ -80,11 +80,6 @@ const shadows = {
   lg: "0px 10px 15px rgba(0, 0, 0, 0.15)",
 };
 
-// const config = {
-//   enableColorScheme: true,
-//   enableSystem: true,
-// };
-
 const format = (obj: Record<string, string | number>) => {
   const formatted = Object.entries(obj).map(([key, value]) => [key, { value }]);
   return Object.fromEntries(formatted);
