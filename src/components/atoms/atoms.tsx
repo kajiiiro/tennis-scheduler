@@ -35,6 +35,10 @@ export const Button: React.FC<ButtonProps & { active?: boolean }> = (props) => {
       disabled={!active}
       opacity={active ? 1 : 0.6}
       cursor={active ? undefined : "not-allowed"}
+      bgColor="primary"
+      borderRadius="md"
+      shadow="md"
+      p="md"
       {...rest}
     />
   );
